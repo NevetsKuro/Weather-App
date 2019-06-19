@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  h1.text-center= title
+  hr
+  br
+  .container.mt-5
+    .row
+      .col
+        input#country.form-control(type='text', placeholder='Country', name='country')
+      .col
+        input#city.form-control(type='text', placeholder='City', name='city')
+      button#getWeather.btn.btn-primary(type='button') Get Weather
+    br
+    .row
+      .col
+      .col
+        .d-flex.justify-content-center
+          .loading.spinner-grow.text-info(role='status', style='display: none')
+            span.sr-only Location is Waiting...
+          p#spinnerText(style='display: none') Location is Waiting...
+          .loading.spinner-grow.text-info(role='status', style='display: none')
+            span.sr-only Location is Waiting...
+          ul(style='list-style: none')
+            li
+              h2#place.text-center(style='display: none')
+            li
+              h4#weather.text-center(style='display: none')
+            li
+              h5#degrees.text-center(style='display: none')
+            li
+              img#weatherImage.text-center(src='')
+      .col
+
+append script
+  script(src='/javascripts/main.js')

@@ -1,2 +1,2 @@
 # weather-app
-The weather app with Node.js and Express (For Algorithms and Data Structures Task)
+The weather app with Node.js, Express and AJAX (For Algorithms and Data Structures Task)
