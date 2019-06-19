@@ -1,4 +1,4 @@
-# weather-app
+# Weather App
 The weather app with Node.js, Express and AJAX (For Algorithms and Data Structures Task)
 
 # Getting Started
